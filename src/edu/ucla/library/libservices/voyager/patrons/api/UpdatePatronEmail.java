@@ -146,15 +146,3 @@ public class UpdatePatronEmail
     return response.getReturnCode();
   }
 }
-  //import org.springframework.jdbc.datasource.DriverManagerDataSource;
-  //private static DriverManagerDataSource ds;
-   //makeConenction();
-  /*private static void makeConenction()
-  {
-    ds = new DriverManagerDataSource();
-    ds.setDriverClassName( "oracle.jdbc.OracleDriver" );
-    ds.setUrl( "jdbc:oracle:thin:@//butler.library.ucla.edu:1521/VGER.butler.library.ucla.edu" );
-    ds.setUsername( "vger_support" );
-    ds.setPassword( "vger_support_pwd" );
-  }*/
-   //private static final String QUERY = "SELECT pa.* FROM ucladb.patron_address pa inner join ucladb.patron p ON pa.patron_id = p.patron_id WHERE pa.address_type = 3 AND p.expire_date >= SYSDATE";
