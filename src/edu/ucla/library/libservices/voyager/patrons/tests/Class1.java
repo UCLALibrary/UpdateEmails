@@ -29,10 +29,9 @@ public class Class1
 
     ds = new DriverManagerDataSource();
     ds.setDriverClassName( "oracle.jdbc.OracleDriver" );
-    ds.setUrl( "jdbc:oracle:thin:@//eliot.library.ucla.edu:1521/VGER.VGER" );
-    //ds.setUrl( "jdbc:oracle:thin:@//butler.library.ucla.edu:1521/VGER.butler.library.ucla.edu" );
-    ds.setUsername( "vger_support" );
-    ds.setPassword( "vger_support_pwd" );
+    ds.setUrl( "url" );
+    ds.setUsername( "user" );
+    ds.setPassword( "pwd" );
 
     patrons = 
         new JdbcTemplate( ds ).query( QUERY, new PatronAddressMapper() );
